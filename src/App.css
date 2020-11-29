@@ -411,6 +411,8 @@ a.uk-inline{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  width:25%;
 }
 .lowerfooter{
   border-top: 2px solid darkgoldenrod;
