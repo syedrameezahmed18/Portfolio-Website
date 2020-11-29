@@ -25,15 +25,15 @@ const Footer = () => {
                     <h3>Contact Me</h3>
                     <div>
                         <img src={gh} />
-                        <p>Github</p>
+                        <a href="https://github.com/syedrameezahmed18" target="_blank">Github</a>
                     </div>
                     <div>
                         <img src={email} />
-                        <p>Gmail</p>
+                        <p>Gmail : noir.ramsam@gmail.com</p>
                     </div>
                     <div className="fixx">
                         <img className="he" src={wa} />
-                        <p>Whatsapp</p>
+                        <p>Whatsapp : 0305-2371366</p>
                     </div>
                 </div>
             </div>
