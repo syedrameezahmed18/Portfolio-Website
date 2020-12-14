@@ -372,16 +372,57 @@ a.uk-inline{
 }
 
 .footer{
-  height: 400px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgb(255, 255, 255);
+  background: #222222;
   margin-top: 8%;
-  color:darkgoldenrod;
-  border-top: 2px solid darkgoldenrod;
+  color:#555555;
+  border-top: 2px solid white;
+}
+.toplayer{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.toplayer img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 2%;
+}
+.toplayer img:hover{
+  cursor: pointer;
+}
+.topmiddle {
+  width:60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.topmiddle p{
+  font-weight: 500;
+  font-size: 18px;
+}
+.topmiddle p:hover{
+  cursor: pointer;
+}
+.justset{
+  margin-top: 3.35%;
+}
+.middlelayer{
+  width:50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .upperfooter{
   height: 300px;
@@ -402,7 +443,7 @@ a.uk-inline{
   align-items: center;
 }
 .upperright h3{
-  color:darkgoldenrod;
+  color:white;
 }
 
 .upperright div{
@@ -415,9 +456,9 @@ a.uk-inline{
   width:25%;
 }
 .lowerfooter{
-  border-top: 2px solid darkgoldenrod;
+  border-top: 2px solid white;
   width: 100%;
-  
+  margin-top: 2%;
 }
 
 .lowerfooter p{
