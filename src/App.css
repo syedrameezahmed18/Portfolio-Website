@@ -464,4 +464,7 @@ a.uk-inline{
 .lowerfooter p{
   text-align: center;
 }
+.fade{
+  display:none;
+}
 

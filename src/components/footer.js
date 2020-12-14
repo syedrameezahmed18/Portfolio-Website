@@ -1,4 +1,4 @@
-import React,{useContext,useState,Fragment} from 'react';
+import React,{useContext,useState,Fragment,useRef} from 'react';
 import gh from '../images/newgh.png';
 import wa from '../images/neww.png';
 import email from '../images/gmail.png'
@@ -6,25 +6,67 @@ import {Screencontext} from '../context.js'
 import { GrFacebook } from 'react-icons/gr';
 import linkedin from '../images/linkedin.png';
 import fb from '../images/facebook.png';
+import Scroll from 'react-scroll';
 
 const Footer = () => {
 
     const {isscreen,setisscreen} = useContext(Screencontext);
+    const [copy,setcopy] = useState("");
+    const textAreaRef = useRef(null);
+
+   
+    const outer = (param) => {
+        var scroll = Scroll.animateScroll;
+        
+         if(param === "l") {
+            window.location.href ="https://www.linkedin.com/in/syed-rameez-ahmed-6b5984199/"
+        }
+        else if(param === "f") {
+            window.location.href ="https://www.facebook.com/rameez.ahmed.5492/"
+        }
+       
+        else if(param === "g") {
+            window.location.href ="https://github.com/syedrameezahmed18"
+        }
+    }
+
+    const redirections = () => {
+        console.log('ok');
+        window.scrollTo(0,700)
+    }
+    const redirections2 = () => {
+        console.log('ok');
+        window.scrollTo(0,1200)
+    }
+    const redirections3 = () => {
+        console.log('ok');
+        window.scrollTo(0,1800)
+    }
+    const redirections4 = () => {
+        console.log('ok');
+        window.scrollTo(0,2600)
+    }
+    
     return(
 
         <div className="footer">
             <div className="toplayer">
-                <img src={wa} title="whatsapp"/>
-                <img src={linkedin} title="LinkedIn" />
-                <img src={fb} title="facebook" />
-                <img src={email} title="gmail" />
-                <img src={gh} title="github" />
+                <img onClick={()=>{navigator.clipboard.writeText('03052371366') 
+                setcopy('Copied')
+                alert(`Copied 03052371366`)}} src={wa} title="whatsapp"/>
+                <img onClick={()=>outer("l")} src={linkedin} title="LinkedIn" />
+                <img onClick={()=>outer("f")} src={fb} title="facebook" />
+                <img onClick={()=>{navigator.clipboard.writeText('noir.ramsam@gmail.com')
+                setcopy('Copied')
+                alert(`Copied noir.ramsam@gmail.com`)}} src={email} title="gmail" />
+                <img onClick={()=>outer("g")} src={gh} title="github" />
             </div>
+            
             <div className="topmiddle">
-                <p className="justset">About</p>
-                <p>Services</p>
-                <p>Skills</p>
-                <p>Contact</p>
+                <p className="justset" onClick={redirections}>About</p>
+                <p onClick={redirections2}>Services</p>
+                <p onClick={redirections3}>Skills</p>
+                <p onClick={redirections4}>Contact</p>
             </div>
             <div className="middlelayer">
             {   isscreen > 800 ? (
