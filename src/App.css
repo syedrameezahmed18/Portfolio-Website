@@ -490,3 +490,47 @@ a.uk-inline{
   outline: none;
 }
 
+.main-contact {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.contact-form-i1, .contact-form-i2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.contact-form-i1 label, .contact-form-i2 label {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cfi1:focus {
+  border-color: gold;
+  box-shadow: 0 0 8px gold;
+  outline: 0 none;
+}
+
+.cfi2:focus {
+  border-color: gold;
+  box-shadow: 0 0 8px gold;
+  outline: 0 none;
+}
+
+.cfi2 {
+  height: 200px !important;
+}
+

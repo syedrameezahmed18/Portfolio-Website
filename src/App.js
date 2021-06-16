@@ -11,6 +11,7 @@ import Services from './components/services'
 import Projects from './components/projects'
 import Footer from './components/footer';
 import PopUp from './components/popup';
+import Contact from './components/contact';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Services />
         <Projects />
         <Tech />
+        <Contact />
         <Footer />
         <PopUp />
       </Screencontext.Provider>
