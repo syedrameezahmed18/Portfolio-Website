@@ -10,11 +10,12 @@ import Tech from './components/tech';
 import Services from './components/services'
 import Projects from './components/projects'
 import Footer from './components/footer';
+import PopUp from './components/popup';
 
 function App() {
 
   let [isscreen, setisscreen] = useState(null);
-  console.log(isscreen)
+  console.log(window.screenY);
 
   const changed = () => {
     setisscreen(window.innerWidth)
@@ -35,6 +36,7 @@ function App() {
         <Projects />
         <Tech />
         <Footer />
+        <PopUp />
       </Screencontext.Provider>
     </div>
   );

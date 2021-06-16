@@ -472,3 +472,21 @@ a.uk-inline{
   display:none;
 }
 
+.to-top {
+  border-radius: 25px;
+  background: 'white';
+  padding: 5px;
+  color:'yellow';
+  position: fixed;
+  top: 85%;
+  left: 93%;
+  border: 2px solid gold;
+  outline: none;
+  backdrop-filter: blur(1px);
+}
+
+.to-top:focus {
+  border: 2px solid gold !important;
+  outline: none;
+}
+
