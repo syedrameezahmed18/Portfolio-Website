@@ -1,4 +1,8 @@
 
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
 svg{
   width: 30px;
 }
